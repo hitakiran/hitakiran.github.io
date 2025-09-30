@@ -25,27 +25,28 @@
       margin-bottom: 20px;
     }
     a {
-      margin: 0 10px;
-      color: grey;
+      margin: 0 20px;
       text-decoration: none;
-      font-weight: bold;
       display: inline-flex;
       align-items: center;
-      font-family: 'Times New Roman', Times, serif;
-    }
-    a:hover {
-      text-decoration: underline;
     }
     a img.icon {
       filter: grayscale(100%);
-      width: 20px;
-      height: 20px;
-      margin-right: 8px;
+      width: 32px;
+      height: 32px;
+      transition: filter 0.2s;
+    }
+    a:hover img.icon {
+      filter: grayscale(0%);
     }
     p.details {
       margin-top: 0;
-      margin-bottom: 20px;
-      font-style: italic;
+      margin-bottom: 30px;
+      font-style: normal;
+      font-size: 1.2em;
+    }
+    .icon-links {
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -53,13 +54,13 @@
   <img src="IMG_3556.jpg" alt="Hita's Photo" class="profile-pic" />
   <h1>Hi, My name is Hita!</h1>
   <p class="details">I am sophomore at UIUC studying Information + Data Science with Computer Science.</p>
-  <p>
+  <div class="icon-links">
     <a href="https://www.linkedin.com/in/hitakiranamba/" target="_blank" rel="noopener">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" class="icon" /> LinkedIn
-    </a> | 
-    <a href="https://github.com/hitakiran?tab=repositories" target="_blank" rel="noopener">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" class="icon" /> GitHub Repositories
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" class="icon" />
     </a>
-  </p>
+    <a href="https://github.com/hitakiran?tab=repositories" target="_blank" rel="noopener">
+      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub" class="icon" />
+    </a>
+  </div>
 </body>
 </html>
